@@ -72,3 +72,41 @@ $ git push origin master
 从远程库克隆
 $ git clone git@github.com:ldc0202/gitskills.git
 
+
+
+
+
+
+
+
+把本地库新添加到远程库：
+1.在GitHub远程服务器新建仓库。
+2.点setting ---> Add SSH Key ---> 填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
+3.git remote add origin git@github.com:ldc0202/gitDiary.git
+4.git push -u origin master
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.83 KiB | 1.83 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:ldc0202/gitDiary.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+枚举对象：3，完成。
+计数对象：100%(3/3)，完成。
+增量压缩，最多使用4个线程。
+压缩对象：100%(2/2)，完成。
+写入对象：100%(3/3)，1.83 KiB|1.83 MiB/s，完成。
+总计3(增量0)，已重用0(增量0)。
+至github.com：ldc0202/gitDiary.git。
+*[新建分支]主->主。
+分支‘master’设置为从‘Origin’跟踪远程分支‘master’。
+
+
+
+
+
+
