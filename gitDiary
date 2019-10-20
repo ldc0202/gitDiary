@@ -1,0 +1,74 @@
+目录
+   mkdir <目录名>---创建一个空目录
+   cd <目录名>------进入目录  
+   pwd -------------显示当前目录   
+   
+初始化版本库
+   git init
+
+把文件添加到版本库
+   git add <文件名>  添加文件
+   git add .  添加所有工作区变化包括修改及新文件提交到缓存区。
+   git add -u 被修改的文件提交到缓存区。
+   git add -A 前两功能集合
+  
+提交新版本（把所有缓存区内容向master分支上提交更改。）
+   git commit -m "版本注释"
+   
+后退版本
+   git reset --hard HEAD^^^^   -----后退到前面第几个版本就用几个“^”,也可以用HEAD~100代替。
+   git reset --hard xxx  -----------后退到哪个版本XXX为前几位的版本号。
+   
+显示输入的命令记录，对跟踪版本号很有用。
+   git reflog
+   
+查看状态
+   git status
+   
+显示历史提交信息
+   git log
+   
+查看工作区和版本库里面最新版本的区别
+   git diff HEAD -- <文件名>
+   
+   
+   
+   
+添加远程库
+登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库：
+
+$ git remote add origin git@github.com:ldc0202/learngit.git
+
+
+
+
+Git 中 SSH key 生成步骤
+由于本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，所以必须要让github仓库认证你SSH key，在此之前，必须要生成SSH key。
+
+第1步：创建SSH Key。在windows下查看[c盘->用户->自己的用户名->.ssh]下是否有id_rsa、id_rsa.pub文件，如果没有需要手动生成。
+打开git bash，在控制台中输入以下命令。
+
+1.$ ssh-keygen -t rsa -C "youremail@example.com"
+密钥类型可以用 -t 选项指定。如果没有指定则默认生成用于SSH-2的RSA密钥。这里使用的是rsa。
+同时在密钥中有一个注释字段，用-C来指定所指定的注释，可以方便用户标识这个密钥，指出密钥的用途或其他有用的信息。
+所以在这里输入自己的邮箱或者其他都行。输入完毕后程序同时要求输入一个密语字符串(passphrase)，空表示没有密语。
+接着会让输入2次口令(password)，空表示没有口令。3次回车即可完成当前步骤，此时[c盘>用户>自己的用户名>.ssh]目录下已经生成好了。
+
+所以是连续几个回车即可。
+
+第2步：登录github。打开setting->SSH keys，点击右上角 New SSH key，把生成好的公钥id_rsa.pub放进 key输入框中，
+再为当前的key起一个title来区分每个key。
+
+
+
+$ git push -u origin master
+加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，
+在以后的推送或者拉取时就可以简化命令。
+
+从现在起，只要本地作了提交，就可以通过命令：
+$ git push origin master
+
+
+从远程库克隆
+$ git clone git@github.com:ldc0202/gitskills.git
+
