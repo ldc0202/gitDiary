@@ -5,6 +5,17 @@
    
 初始化版本库
    git init
+查看GIT版本号
+   git version
+修改用户名和EMAIL
+   git config --global user.name xxx
+   git config --global user.email git@163.com
+查看config文档
+   git --help
+查看用户名和EMAIL
+   git config --list --global
+有多个用户名要删除其中的一些时
+   git config --global --unset -user.name  xxx
 
 把文件添加到版本库
    git add <文件名>  添加文件
