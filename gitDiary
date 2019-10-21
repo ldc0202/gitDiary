@@ -118,6 +118,6 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 
 
-
+在分支company上做了增加创建和合并分支说明后，现在切换回分支master输入这段话再担交看看冲突情况。
 
 
