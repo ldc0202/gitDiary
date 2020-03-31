@@ -164,4 +164,4 @@ git branch -d feature1
 
 git rm -r --cached ignoreFile（ignoreFile就是你想忽略的文件、文件夹），让git不再tracking这些文件。
 
-git log --graph --oneline --all  以图形单行显示全部版本信息
+git push -u 库名 分支名   这里-u指定推送到哪个远程库的哪个分支不然在拉取时不知该合并到哪个分支会出问题的。
