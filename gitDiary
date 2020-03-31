@@ -86,8 +86,8 @@ $ git clone git@github.com:ldc0202/gitskills.git
 
 
 
-
-
+在Git配置中更改远程源
+git remote set-url origin git@github.com:username/projectname.git
 
 
 把本地库新添加到远程库：
@@ -161,3 +161,5 @@ git branch -d feature1
 输入“git branch -a”查看远程项目所有分支，红颜色分支代表当前所在分支，其他的所列的就是所有分支了。
 
 输入“git remote show origin”查看当前仓库基本信息。
+
+git rm -r --cached ignoreFile（ignoreFile就是你想忽略的文件、文件夹），让git不再tracking这些文件。
