@@ -163,3 +163,5 @@ git branch -d feature1
 输入“git remote show origin”查看当前仓库基本信息。
 
 git rm -r --cached ignoreFile（ignoreFile就是你想忽略的文件、文件夹），让git不再tracking这些文件。
+
+git log --graph --oneline --all  以图形单行显示全部版本信息
