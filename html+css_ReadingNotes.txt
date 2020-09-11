@@ -1,0 +1,71 @@
+学习web前端的4个阶段
+1.HTML---->CSS---->Javascript---->jQUery免费、开源的轻量级的JavaScript库Bootstrap是Twitter推出的一个开源的用于前端开发的工具包，是一个CSS/HTML框架，并且支持响应式布局。
+一经推出后颇受欢迎，一直是GitHub上的热门开源项目。
+2.关于学习Web前端的建议
+要善于使用Firebug这个利器。Firebug一方面可以帮助我们调试自己的页面，另一方面我们可以使用Firebug方便地查看、分析别人网站的源代码。
+
+Vscode应用
+1.<h1 回车可以补齐。
+2..字母，回车补齐类名
+3.#字母，回车补齐ID
+4.div>h2 新建一个DIV里面包含一个h2
+5.div>h2>a 新建一个DIV里面包含一个h2里再加带一个a标签
+6.ul>li*5 新建一个ul里面包含5个li
+7.ul>li*5>a{$} 新建一个ul里面包含5个li里带有一个a标签a标签的值是1，2，3，4，5
+8.ul>li*5>a[href=‘#’]{123}  新建一个ul里面包含5个li里带有一个a标签a标签的值是都是123而且a标签的href="#"
+9.div>h2+h3新建一个DIV里面包含一个h2和h3
+10.div>h2>h3新建一个DIV里面包含一个h2里有个h3
+11.按住ALT键可以多光标选中输入。
+12.ctrl+/注释 
+13.行号右边的符号折叠标签
+14.alt+上下箭头，上移或下移一行。
+15.css  style color时有代码提示；w100会补齐width:100px
+16,ESLint是JS的纠错插件
+
+
+2020权威HTML+CSS零基础入学
+
+1.<html lang="en，zh"  告搜索引擎爬早，我们的网站是关于什么内容的。
+2.<heand>
+    <meta charset="utf-8">
+  </head>
+3.<strong>加粗</strong>  <en>斜体</en>
+4.<strong><en>斜体</en></strong> 加粗双斜体
+5.<del style="color: #999">50</del>删除
+6.<address>黑龙江时蠕地时有时无左十三日 </address> 地址与  <p><en>斜体</en><p/>效果一样
+7.<div>例子</div>独立一行。<span> 城里</span>行内标签
+
+html进阶篇-高级标签
+字符分隔符
+空格&nbsp;
+<  &lt;
+>  &gt;
+<br>换行单标签
+<hr>水平线
+
+有序列表
+<ol type="a" reversed="reversed" start="2">有五种排序1/a/A/i/I
+ 	<li>marvel</li>
+ 	<li>速8</li>
+ 	<li>魂牵梦萦</li>
+ </ol>
+
+无序列表
+ <UL type="circle">
+ 	<LI>jfd </LI>
+ 	<LI>fdsafds</LI>
+ 	<LI>fdsafd</LI>
+ 	<LI>fdsafsd</LI>
+ </UL>
+
+图片
+ <img src="02.jpg" style="width: 200px;" alt="照片" title="亲子">
+ alt是图片找不到时显示的文字
+title鼠标移上去的提示文字
+
+链接
+<a href="https://www.baidu.com" target="_blank">www.baidu.com</a>
+target="_blank"在新窗口打开
+
+https://ke.qq.com/webcourse/index.html#cid=231570&term_id=100273162&taid=1441313715357842&vid=5285890796646561594
+
